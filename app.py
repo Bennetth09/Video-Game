@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 app = Flask(__name__)
 
 
-data = pd.read_csv('D:\PROJECTS\GAME DEV\data\game_data1.csv')
+data = pd.read_csv('D:\PROJECTS\VIDEO GAME\data\game_data1.csv')
 
 
 @app.route('/')
