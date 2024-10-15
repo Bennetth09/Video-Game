@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Recommendation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background-color: #50b3a2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #50b3a2;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a090;
+        }
+        .result {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #50b3a2;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Game Recommendation System</h1>
+</header>
+
+<div class="container">
+    <form action="/predict" method="POST">
+        <h2>Get Game Recommendations</h2>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="gender">Your gender (0 for male, 1 for female):</label>
+        <input type="number" id="gender" name="gender" min="0" max="1" required>
+
+        <label for="age">Your age:</label>
+        <input type="number" id="age" name="age" placeholder="Your Age" required>
+
+        <input type="submit" value="Get Recommendations">
+    </form>
+</div>
+
+<footer>
+    <p>Game Recommendation System © 2024</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background-color: #50b3a2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .result {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #e8f0fe;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #50b3a2;
+            color: #fff;
+            border-radius: 4px;
+        }
+        a:hover {
+            background-color: #45a090;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #50b3a2;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Game Recommendation System</h1>
+</header>
+
+<div class="container">
+    <div class="result">
+        <h2>Hey {{ name }}, here are your recommended games:</h2>
+        <ul>
+            <li>Game 1: {{ game1 }}</li>
+            <li>Game 2: {{ game2 }}</li>
+            <li>Game 3: {{ game3 }}</li>
+        </ul>
+        <a href="/">Go back</a>
+    </div>
+</div>
+
+<footer>
+    <p>Game Recommendation System © 2024</p>
+</footer>
+
+</body>
+</html>
